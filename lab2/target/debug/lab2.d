@@ -1,0 +1,1 @@
+/home/waveformceline/Downloads/translation-compilation/lab2/target/debug/lab2: /home/waveformceline/Downloads/translation-compilation/lab2/src/lexer.rs /home/waveformceline/Downloads/translation-compilation/lab2/src/main.rs

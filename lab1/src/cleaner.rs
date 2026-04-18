@@ -6,7 +6,7 @@ pub struct CleanResult {
     pub errors: Vec<String>,
 }
 
-/// Проверка на недопустимые символы, можно только ASCII + переводы строк + табы
+/// проверка на недопустимые символы, можно только ASCII + переводы строк + табы
 fn check_invalid_chars(input: &str) -> Vec<String> {
     let mut errors = Vec::new();
 
@@ -39,7 +39,7 @@ pub fn clean_source_code(input: &str) -> CleanResult {
     let mut messages = Vec::new();
     let mut errors = Vec::new();
 
-    // --- Проверки ---
+    // проверяем
     if let Some(err) = check_unclosed_multiline(input) {
         errors.push(err);
     }

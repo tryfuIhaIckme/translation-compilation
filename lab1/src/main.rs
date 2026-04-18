@@ -27,7 +27,7 @@ fn main() {
 
     let cleaned_file = "cleaned_test.c";
     fs::write(cleaned_file, &result.cleaned_code)
-        .expect("Не удалось записать файл");
+        .expect("Не удалось запис   ать файл");
 
     println!("\nФайл {} сохранён", cleaned_file);
 
