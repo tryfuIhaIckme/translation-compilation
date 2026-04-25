@@ -18,16 +18,15 @@ fn clean_code(input: &str) -> String {
 }
 
 fn main() {
-    // Читаем файл из папки lab1
     let file_path = "../lab1/src/test.c";
     let input = fs::read_to_string(file_path)
         .expect("Не удалось прочитать исходный файл test.c");
 
-    println!("Очистка кода (ЛР1)");
+    println!("Очистка кода ");
     let cleaned = clean_code(&input);
     println!("{}", cleaned);
 
-    println!("\n Лексический анализ (ЛР2)");
+    println!("\n Лексический анализ ");
     let mut lexer = Lexer::new(&cleaned);
     let (tokens, errors) = lexer.tokenize();
 

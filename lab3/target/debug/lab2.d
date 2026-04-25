@@ -1,0 +1,1 @@
+/home/waveformceline/Downloads/translation-compilation/lab3/target/debug/lab2: /home/waveformceline/Downloads/translation-compilation/lab3/src/cleaner.rs /home/waveformceline/Downloads/translation-compilation/lab3/src/main.rs
