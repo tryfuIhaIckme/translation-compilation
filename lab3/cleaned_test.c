@@ -1,6 +1,26 @@
-int global_counter;
-int main() {
 int x;
+int y;
+int b;
 x = 10;
-return x;
+y = 20;
+b = 10;
+x = x + y;
+x = x + y * 2;
+x = (x + y) * 2;
+if (x > y) {
+x = x - 1;
+y = y + 1;
 }
+if (x == 0) {
+x = 100;
+} else {
+x = 200;
+}
+while (x > 0) {
+x = x - 1;
+if (x == 5) {
+x = x + 10;
+}
+}
+x = (x + y) * (y - 2) / 3;
+x = x + (y * (b + 2));

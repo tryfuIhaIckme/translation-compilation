@@ -2,9 +2,14 @@ mod cleaner;
 use cleaner::{clean_source_code, print_ast};
 use std::fs;
 
+use std::env;
+
 fn main() {
-    let path = "src/test.c";
-    let input = fs::read_to_string(path).expect("Файл не найден");
+    let args: Vec<String> = env::args().collect();
+    let path = if args.len() > 1 { &args[1] } else { "src/test.c" };
+    
+    println!("=== АНАЛИЗ ФАЙЛА: {} ===", path);
+    let input = fs::read_to_string(path).unwrap_or_else(|_| panic!("Файл {} не найден", path));
 
     let result = clean_source_code(&input);
 
